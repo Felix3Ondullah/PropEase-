@@ -1,0 +1,16 @@
+{
+  "name": "propease",
+  "version": "0.1.0",
+  "description": "All-in-one property management platform for small landlords in Africa",
+  "private": true,
+  "scripts": {
+    "frontend:install": "cd apps/frontend && npm install",
+    "frontend:dev": "cd apps/frontend && npm run dev",
+    "frontend:build": "cd apps/frontend && npm run build",
+    "backend:install": "cd apps/backend && pip install -r requirements.txt",
+    "backend:dev": "cd apps/backend && source venv/bin/activate && python manage.py runserver",
+    "backend:migrate": "cd apps/backend && source venv/bin/activate && python manage.py migrate",
+    "setup": "npm run frontend:install && npm run backend:install && npm run backend:migrate"
+  }
+}
+
